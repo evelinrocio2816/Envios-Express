@@ -1,0 +1,23 @@
+.menuFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  .titulo {
+    color: rgb(177, 72, 72);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+
+  .fm {
+    width: 50%;
+    height: 40%;
+    border: 3px solid black;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }

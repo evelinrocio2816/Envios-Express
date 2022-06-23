@@ -1,0 +1,23 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    li{
+        list-style-type: none;
+        font-weight: bold;
+        padding-top: 30px;
+        padding-right: 20px;
+        a{
+            text-decoration: none;
+            color: aliceblue;
+
+            &:hover{
+                color: chartreuse;
+                transition: all 2s;
+                transform: scale(2);
+            }
+            
+        }
+    }
+}

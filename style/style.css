@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2? family= Nanum+Gothic:wght@700 & family= Oleo+Script+Swash+Caps & family= Oswald:wght@200 & family= Overpass:wght@500 & family= PT+Serif:wght@700 & family= Poppins:wght@600 & display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#grilla {
+  width: 100%;
+  height: 100%;
+}
+
+section#logoTipo {
+  grid-area: section;
+  background-color: black;
+}
+
+header {
+  grid-area: header;
+  background-color: black;
+}
+
+nav {
+  grid-area: nav;
+  background-color: yellowgreen;
+}
+
+section#Productos {
+  grid-area: productos;
+  background-color: white;
+}
+
+section#servicios {
+  grid-area: servicios;
+  background-color: white;
+}
+
+aside {
+  grid-area: publicidad;
+  background-color: white;
+}
+
+footer {
+  grid-area: footer;
+  background-color: grey;
+}
+
+@media (max-width: 480px) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "section" "header" "nav" "productos" "publicidad" "servicios" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 3fr 2fr 2fr 1fr 0, 5fr;
+    gap: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "section header header" "nav nav nav" "productos productos productos" "servicios servicios servicios" "publicidad publicidad publicidad" "footer footer footer";
+    grid-template-columns: 15% auto 10%;
+    grid-template-rows: 100px 50px 2fr 0, 5fr 2fr;
+    gap: 0px;
+  }
+}
+.logoTipo {
+  width: 100px;
+  height: 100px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+ul li {
+  list-style-type: none;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+ul li a:hover {
+  color: chartreuse;
+  transition: all 2s;
+  transform: scale(2);
+}
+
+.iconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-bottom: 30px;
+}
+
+.menuFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.titulo {
+  color: rgb(177, 72, 72);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.fm {
+  width: 50%;
+  height: 40%;
+  border: 3px solid black;
+  margin-left: 20%;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+h1 {
+  color: crimson;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 60px;
+}
+
+.pc {
+  display: flex;
+  justify-content: first baseline;
+}
+
+article {
+  color: brown;
+  font-size: larger;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-left: 40%;
+}
+
+div {
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.genero {
+  color: brown;
+  padding-top: 30px;
+  padding-left: 40%;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.mapa {
+  width: 150;
+  height: 150;
+  padding-top: 20px;
+  margin-left: 700px;
+  border-radius: 40px;
+}
+
+h2 {
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: yellowgreen;
+  background-color: gray;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 30px;
+}
+
+.parrafos {
+  color: black;
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: yellowgreen;
+  background-color: gray;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 30px;
+}
+
+.parrafosTres {
+  color: black;
+  font-size: 30px;
+  font-weight: normal;
+  padding-top: 50px;
+  padding-left: 10%;
+}
+
+h1 {
+  color: crimson;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 60px;
+}
+
+.parrafoDos {
+  color: black;
+  font-size: x-large;
+  margin-left: 70px;
+  padding-top: 70px;
+}
+
+h1 {
+  color: crimson;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 60px;
+}
+
+p {
+  padding-top: 50px;
+  padding-left: 50px;
+  color: darkmagenta;
+}
+
+.fotoPrecios {
+  width: 300px;
+  height: 350px;
+  padding-top: 40px;
+  padding-left: 50%;
+}
+
+h1 {
+  color: crimson;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 60px;
+}
+
+.flex {
+  padding-top: 30px;
+  width: 200px;
+  height: 150;
+  margin-left: 50px;
+  margin-bottom: 80px;
+}
+
+.flex2 {
+  width: 220px;
+  height: 200px;
+  margin-left: 50px;
+  margin-bottom: 80px;
+}
+
+span {
+  display: flex;
+  flex-direction: row;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-top: 60px;
+}
+
+.rs {
+  display: flex;
+  justify-content: center;
+  color: beige;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+.rs:hover {
+  transform: scale(1);
+  transition: all 2s;
+}
+
+.box-uno {
+  background-color: blue;
+  width: 300px;
+  height: 40px;
+  font-size: 30px;
+}
+
+.box-dos {
+  background-color: green;
+  width: 250px;
+  padding-bottom: 20px;
+}
+
+p {
+  color: blueviolet;
+}
+
+.contenido-tres {
+  border: 2px dashed red;
+}
+
+.casitodos-1 {
+  background-color: darkgreen;
+  color: whitesmoke;
+  width: 200px;
+}
+
+.casitodos-2 {
+  background-color: darkgreen;
+  color: whitesmoke;
+  width: 400px;
+}
+
+.casitodos-3 {
+  background-color: darkgreen;
+  color: whitesmoke;
+  width: 600px;
+}
+
+.casitodos-4 {
+  background-color: darkgreen;
+  color: whitesmoke;
+  width: 800px;
+}
+
+.btn--twitter {
+  background-color: #55aCee;
+}
+
+.btn--facebook {
+  background-color: blue;
+}
+
+.btn--instagram {
+  background-color: orange;
+}
+
+.redsocial, .redsocial--mark, .redsocial--nueva, .redsocial--social {
+  border: 2px solid red;
+  background-color: gold;
+}
+
+.redsocial--social {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+.redsocial--nueva {
+  font-size: 30px;
+  color: black;
+}
+
+.redsocial--mark {
+  font-weight: bold;
+  color: bisque;
+  background-color: coral;
+}
+
+.my-mixin {
+  height: 50px;
+  width: 500px;
+  background-color: palevioletred;
+  font-size: 40px;
+}/*# sourceMappingURL=style.css.map */

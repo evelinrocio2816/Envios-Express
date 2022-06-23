@@ -1,0 +1,92 @@
+$ancho:600px;
+$color:blue;
+$green:green;
+
+
+.box-uno{
+    background-color: $color;
+    width: $ancho/2;
+    height: 40px;
+    font-size: 30px;
+}
+.box-dos{
+    background-color: $green;
+    width:($ancho/2)-50 ;
+
+    padding-bottom: 20px;
+
+}
+$tipografia: conejo;
+p{
+    @if $tipografia ==conejo{
+        color: blueviolet;
+        
+    }
+    @else if $tipografia == gato{
+        color: darkcyan;
+        font-weight: bolder;
+
+    }
+}
+$mostrar:true;
+.contenido-tres{
+    @if $mostrar{
+        border: 2px dashed red;
+    }
+}
+
+$i:1;
+
+@for $i from 1 through 4 {
+    .casitodos-#{$i}{
+        background-color: darkgreen;
+        color:whitesmoke;
+        width: 200px*$i;
+    }
+
+}
+
+
+$redes: (
+    twitter: #55aCee,
+    facebook: blue,
+    instagram: orange,
+);
+
+@each $red, $color in $redes{
+    .btn--#{$red}{
+        background-color: $color;
+    }
+}
+.redsocial{
+    border: 2px solid red;
+    background-color: gold;
+    
+}
+.redsocial--social{
+    @extend .redsocial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.redsocial--nueva{
+    @extend .redsocial;
+    font-size: 30px;
+    color:black
+}
+.redsocial--mark{
+    @extend .redsocial;
+    font-weight: bold;
+    color: bisque;
+    background-color: coral;
+}
+
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+    
+}
+.my-mixin{
+    @include sizes(500px, 50px);
+    background-color: palevioletred;
+    font-size: 40px;
+}
